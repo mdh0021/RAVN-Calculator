@@ -18,8 +18,7 @@ export default function CalculatorsPage() {
       icon: "🔬",
       features: ["Trigonometry", "Logarithms", "Exponents", "Constants"],
       color: "from-indigo-500 to-indigo-600",
-      complexity: "Medium",
-      comingSoon: true
+      complexity: "Medium"
     },
     {
       id: "programmer",
