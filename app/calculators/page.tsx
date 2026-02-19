@@ -188,7 +188,7 @@ export default function CalculatorsPage() {
   ];
 
   // Helper function to get category statistics
-  const getCategoryStats = (category) => {
+  const getCategoryStats = (category: { calculators: { available: boolean }[] }) => {
     const total = category.calculators.length;
     const available = category.calculators.filter(calc => calc.available).length;
     return { total, available };

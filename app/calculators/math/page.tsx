@@ -4,14 +4,14 @@ export default function MathCategoryPage() {
   // Math & Number calculators data
   const mathCalculators = [
     {
-      id: "basic",
-      title: "Basic Calculator",
-      description: "Simple arithmetic operations for everyday calculations",
-      icon: "🧮",
-      color: "from-blue-500 to-blue-600",
-      complexity: "Low",
+      id: "percent",
+      title: "Percentage Calculator",
+      description: "Calculate percentages, increases, decreases, and comparisons",
+      icon: "📊",
+      color: "from-blue-500 to-indigo-600",
+      complexity: "Low-Medium",
       available: true,
-      features: ["Addition", "Subtraction", "Multiplication", "Division"]
+      features: ["What Percent Of", "Find Percentage", "Percentage Increase", "Percentage Decrease", "Percentage Difference"]
     },
     {
       id: "scientific",
@@ -22,16 +22,6 @@ export default function MathCategoryPage() {
       complexity: "Medium",
       available: true,
       features: ["Trigonometry", "Logarithms", "Exponents", "Constants"]
-    },
-    {
-      id: "percent",
-      title: "Percent Calculator",
-      description: "Percentage calculations, increases, decreases, and comparisons",
-      icon: "📊",
-      color: "from-teal-500 to-teal-600",
-      complexity: "Low",
-      available: false,
-      features: ["Percentage Increase", "Percentage Decrease", "Percentage of Total", "Comparisons"]
     },
     {
       id: "fraction",
