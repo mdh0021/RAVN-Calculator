@@ -188,7 +188,7 @@ export default function CalculatorsPage() {
                     </button>
                   ) : (
                     <Link
-                      href={`/calculators/${calculator.id}`}
+                      href={`/calculators/${calculator.id === 'scientific' ? 'math/scientific' : calculator.id}`}
                       className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
                     >
                       Launch Calculator
