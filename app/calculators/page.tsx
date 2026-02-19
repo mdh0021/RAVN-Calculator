@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export default function CalculatorsPage() {
   const calculatorTypes = [
+    // Math & Number Calculators (18 calculators)
     {
       id: "basic",
       title: "Basic Calculator",
@@ -20,6 +21,188 @@ export default function CalculatorsPage() {
       color: "from-indigo-500 to-indigo-600",
       complexity: "Medium"
     },
+    {
+      id: "percent",
+      title: "Percent Calculator",
+      description: "Percentage calculations, increases, decreases, and comparisons",
+      icon: "📊",
+      features: ["Percentage Increase", "Percentage Decrease", "Percentage of Total", "Comparisons"],
+      color: "from-teal-500 to-teal-600",
+      complexity: "Low",
+      comingSoon: true
+    },
+    {
+      id: "fraction",
+      title: "Fraction Calculator",
+      description: "Fraction arithmetic, simplification, and conversion",
+      icon: "🔢",
+      features: ["Fraction Addition", "Fraction Subtraction", "Fraction Multiplication", "Fraction Division"],
+      color: "from-green-500 to-green-600",
+      complexity: "Low-Medium",
+      comingSoon: true
+    },
+    {
+      id: "ratio",
+      title: "Ratio Calculator",
+      description: "Ratio calculations, proportion solving, and ratio comparison",
+      icon: "⚖️",
+      features: ["Ratio Simplification", "Proportion Solving", "Ratio Comparison", "Scaling"],
+      color: "from-orange-500 to-orange-600",
+      complexity: "Low-Medium",
+      comingSoon: true
+    },
+    {
+      id: "number-base",
+      title: "Number Base Converter",
+      description: "Binary, hexadecimal, decimal, and octal conversions",
+      icon: "🔢",
+      features: ["Binary Conversion", "Hexadecimal Conversion", "Decimal Conversion", "Octal Conversion"],
+      color: "from-purple-500 to-purple-600",
+      complexity: "Medium",
+      comingSoon: true
+    },
+    {
+      id: "prime-checker",
+      title: "Prime Number Checker",
+      description: "Prime number identification and factorization",
+      icon: "🔢",
+      features: ["Prime Detection", "Prime Factorization", "Next Prime", "Prime Range"],
+      color: "from-red-500 to-red-600",
+      complexity: "Medium",
+      comingSoon: true
+    },
+    {
+      id: "gcd-lcm",
+      title: "GCD & LCM Calculator",
+      description: "Greatest common divisor and least common multiple",
+      icon: "🔢",
+      features: ["GCD Calculation", "LCM Calculation", "Multiple Numbers", "Step-by-Step"],
+      color: "from-blue-500 to-cyan-600",
+      complexity: "Medium",
+      comingSoon: true
+    },
+    {
+      id: "modulo",
+      title: "Modulo Calculator",
+      description: "Modular arithmetic operations",
+      icon: "🔢",
+      features: ["Modulo Operation", "Modular Arithmetic", "Clock Arithmetic", "Cryptography"],
+      color: "from-indigo-500 to-purple-600",
+      complexity: "Medium",
+      comingSoon: true
+    },
+    {
+      id: "absolute-value",
+      title: "Absolute Value Calculator",
+      description: "Absolute value calculations and properties",
+      icon: "🔢",
+      features: ["Absolute Value", "Distance Calculation", "Inequality Solving", "Graphing"],
+      color: "from-green-500 to-teal-600",
+      complexity: "Low-Medium",
+      comingSoon: true
+    },
+    {
+      id: "square-root",
+      title: "Square Root Calculator",
+      description: "Square root and nth root calculations",
+      icon: "🔢",
+      features: ["Square Root", "Cube Root", "Nth Root", "Perfect Squares"],
+      color: "from-orange-500 to-red-600",
+      complexity: "Low-Medium",
+      comingSoon: true
+    },
+    {
+      id: "exponent",
+      title: "Exponent Calculator",
+      description: "Power and exponential calculations",
+      icon: "🔢",
+      features: ["Power Calculation", "Exponential Functions", "Scientific Notation", "Growth Rates"],
+      color: "from-pink-500 to-purple-600",
+      complexity: "Medium",
+      comingSoon: true
+    },
+    {
+      id: "logarithm",
+      title: "Logarithm Calculator",
+      description: "Logarithmic functions (natural, base 10, custom base)",
+      icon: "🔢",
+      features: ["Natural Log", "Base 10 Log", "Custom Base Log", "Log Properties"],
+      color: "from-blue-500 to-indigo-600",
+      complexity: "Medium-High",
+      comingSoon: true
+    },
+    {
+      id: "factorial",
+      title: "Factorial Calculator",
+      description: "Factorial and double factorial calculations",
+      icon: "🔢",
+      features: ["Factorial", "Double Factorial", "Gamma Function", "Combinatorics"],
+      color: "from-green-500 to-blue-600",
+      complexity: "Medium",
+      comingSoon: true
+    },
+    {
+      id: "random-number",
+      title: "Random Number Generator",
+      description: "Random number generation with ranges and seeds",
+      icon: "🔢",
+      features: ["Range Generation", "Seeded Random", "Multiple Numbers", "Distribution Types"],
+      color: "from-yellow-500 to-orange-600",
+      complexity: "Low-Medium",
+      comingSoon: true
+    },
+    {
+      id: "permutation",
+      title: "Permutation Calculator",
+      description: "Permutation calculations (nPr)",
+      icon: "🔢",
+      features: ["Permutation", "Arrangement", "Order Matters", "Counting"],
+      color: "from-red-500 to-pink-600",
+      complexity: "Medium",
+      comingSoon: true
+    },
+    {
+      id: "combination",
+      title: "Combination Calculator",
+      description: "Combination calculations (nCr)",
+      icon: "🔢",
+      features: ["Combination", "Selection", "Order Doesn't Matter", "Binomial Coefficient"],
+      color: "from-teal-500 to-green-600",
+      complexity: "Medium",
+      comingSoon: true
+    },
+    {
+      id: "rounding",
+      title: "Rounding Calculator",
+      description: "Rounding to decimal places and significant figures",
+      icon: "🔢",
+      features: ["Decimal Places", "Significant Figures", "Rounding Rules", "Precision"],
+      color: "from-blue-500 to-teal-600",
+      complexity: "Low",
+      comingSoon: true
+    },
+    {
+      id: "significant-figures",
+      title: "Significant Figures Calculator",
+      description: "Significant figure rules and calculations",
+      icon: "🔢",
+      features: ["Sig Fig Rules", "Arithmetic Operations", "Scientific Notation", "Precision"],
+      color: "from-indigo-500 to-blue-600",
+      complexity: "Low-Medium",
+      comingSoon: true
+    },
+    {
+      id: "parentheses",
+      title: "Calculator with Parentheses Support",
+      description: "Complex expression evaluation with parentheses",
+      icon: "🔢",
+      features: ["Expression Parsing", "Order of Operations", "Nested Parentheses", "Complex Math"],
+      color: "from-purple-500 to-indigo-600",
+      complexity: "Medium-High",
+      comingSoon: true
+    },
+    
+    // Other Category Calculators
     {
       id: "programmer",
       title: "Programmer Calculator",
@@ -58,16 +241,6 @@ export default function CalculatorsPage() {
       features: ["Date Differences", "Age Calculator", "Business Days", "Duration"],
       color: "from-red-500 to-red-600",
       complexity: "Low-Medium",
-      comingSoon: true
-    },
-    {
-      id: "percentage",
-      title: "Percentage Calculator",
-      description: "Percentage calculations and comparisons",
-      icon: "📊",
-      features: ["Percentage Increase", "Percentage Decrease", "Percentage of Total", "Comparisons"],
-      color: "from-teal-500 to-teal-600",
-      complexity: "Low",
       comingSoon: true
     },
     {
