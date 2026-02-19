@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        key={typeof window !== 'undefined' ? 'client' : 'server'}
       >
         {children}
       </body>
