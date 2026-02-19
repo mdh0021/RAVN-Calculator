@@ -4,6 +4,16 @@ export default function MathCategoryPage() {
   // Math & Number calculators data
   const mathCalculators = [
     {
+      id: "basic",
+      title: "Basic Calculator",
+      description: "Simple arithmetic operations for everyday calculations",
+      icon: "🧮",
+      color: "from-blue-500 to-indigo-600",
+      complexity: "Low",
+      available: true,
+      features: ["Addition", "Subtraction", "Multiplication", "Division", "Percentage", "Decimal Numbers"]
+    },
+    {
       id: "percent",
       title: "Percentage Calculator",
       description: "Calculate percentages, increases, decreases, and comparisons",
@@ -30,7 +40,7 @@ export default function MathCategoryPage() {
       icon: "🔢",
       color: "from-green-500 to-green-600",
       complexity: "Low-Medium",
-      available: false,
+      available: true,
       features: ["Fraction Addition", "Fraction Subtraction", "Fraction Multiplication", "Fraction Division"]
     },
     {
@@ -334,7 +344,7 @@ export default function MathCategoryPage() {
                     </button>
                   ) : (
                     <Link
-                      href={`/calculators/math/${calculator.id}`}
+                      href={calculator.id === "basic" ? "/calculators/basic" : `/calculators/math/${calculator.id}`}
                       className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 text-sm"
                     >
                       Launch Calculator

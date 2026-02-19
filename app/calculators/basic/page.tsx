@@ -355,13 +355,22 @@ export default function BasicCalculator() {
         </div>
 
         {/* Back to Calculators */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 space-y-4">
           <Link
-            href="/calculators"
-            className="inline-flex items-center gap-2 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 px-6 py-3 rounded-lg font-medium hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
+            href="/calculators/math"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
           >
-            ← Back to Calculator Selection
+            ← Back to Math & Number Calculators
           </Link>
+          <div className="text-sm text-slate-500 dark:text-slate-400">
+            Or go to
+            <Link
+              href="/calculators"
+              className="ml-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium"
+            >
+              All Calculators
+            </Link>
+          </div>
         </div>
       </main>
 
